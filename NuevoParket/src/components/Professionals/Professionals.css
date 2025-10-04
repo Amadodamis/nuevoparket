@@ -1,0 +1,11 @@
+.professionals {
+    padding: 3rem;
+    text-align: center;
+}
+
+.professionals-actions {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}

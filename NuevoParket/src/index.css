@@ -1,0 +1,101 @@
+/* Importación de fuentes Google */
+@import url('https://fonts.googleapis.com/css2?family=Gudea:ital,wght@0,400;0,700;1,400&family=Hind+Madurai:wght@300;400;500;600;700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  /* Fuentes */
+  --font-title: "Noto Sans", sans-serif;
+  --font-subtitle: "Gudea", sans-serif;
+  --font-texts: "Hind Madurai", sans-serif;
+
+  /* Paleta clara (fija, sin dark mode) */
+  --color1: #1e1e1e; /* texto principal */
+  --color2: #ffffff; /* fondo principal */
+  --color3: #00b300; /* acento */
+  --color4:#ff5900;
+  
+}
+
+/* Reset moderno */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color2);
+  color: var(--color1);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  min-height: 100vh;
+}
+
+/* Reset enlaces y listas */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Imágenes y multimedia fluidos */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Inputs y botones */
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-title);
+  font-weight: 500;
+}
+
+h4,
+h5,
+h6{
+  font-family: var(--font-subtitle);
+  font-weight: 800;
+}
+
+
+button,
+p{
+  font-family: var(--font-text);
+  font-weight: 600;
+}
+
+button{
+  font-family: var(--font-text);
+  font-weight: 500;
+}

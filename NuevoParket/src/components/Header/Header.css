@@ -1,0 +1,37 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 3rem;
+    border-bottom: 1px solid #ccc;
+
+}
+
+.logo {
+    width: 15%;
+}
+
+
+
+.header nav ul {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+.header nav ul li {
+    cursor: pointer;
+    font-weight: 500;
+    font-family: var(--font-title);
+}
+
+.quote-btn {
+    background: #00b300;
+    color: var(--color2);
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+    font-family: var(--font-title);
+    font-size: 1.2rem;
+}

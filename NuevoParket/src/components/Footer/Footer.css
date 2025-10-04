@@ -1,0 +1,13 @@
+.footer {
+    padding: 3rem;
+    background: #eee;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 2rem;
+}
+
+.footer-section {
+    background: black;
+    color: white;
+    padding: 1rem;
+}
