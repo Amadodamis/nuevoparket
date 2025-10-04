@@ -1,18 +1,65 @@
 .hero {
     position: relative;
-    height: 70vh;
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
 }
 
-.hero-image {
-    background: black;
+.hero-slide {
     width: 100%;
     height: 100%;
+    position: relative;
+    transition: background-color 0.5s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.hero-text {
+.hero-content {
+    color: white;
+    text-align: center;
+    max-width: 600px;
+    z-index: 2;
+}
+
+.hero-content h1 {
+    font-size: 2rem;
+    line-height: 1.4;
+    margin-bottom: 1.5rem;
+}
+
+.hero-content button {
+    background: white;
+    color: black;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.arrow {
     position: absolute;
     top: 50%;
-    left: 10%;
+    transform: translateY(-50%);
+    font-size: 3rem;
+    background: rgba(255, 255, 255, 0.3);
+    border: none;
     color: white;
-    max-width: 400px;
+    cursor: pointer;
+    z-index: 3;
+    padding: 0 0.5rem;
+    transition: background 0.3s;
+}
+
+.arrow:hover {
+    background: rgba(255, 255, 255, 0.6);
+    color: black;
+}
+
+.arrow.left {
+    left: 0;
+}
+
+.arrow.right {
+    right: 0;
 }
