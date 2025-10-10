@@ -7,11 +7,11 @@
   --font-subtitle: "Gudea", sans-serif;
   --font-texts: "Hind Madurai", sans-serif;
 
-  /* Paleta clara (fija, sin dark mode) */
-  --color1: #1e1e1e; /* texto principal */
-  --color2: #ffffff; /* fondo principal */
-  --color3: #009933; /* acento */
-  --color4:#ff5900;
+  
+  --color1: #1e1e1e; 
+  --color2: #ffffff;
+  --color3: #009933; 
+  --color4:#ef7e1a;
   
 }
 
@@ -91,8 +91,8 @@ h6{
 
 button,
 p{
-  font-family: var(--font-text);
-  font-weight: 600;
+  font-family: var(--font-title);
+  font-weight: 300;
 }
 
 button{
