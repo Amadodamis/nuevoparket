@@ -22,6 +22,9 @@ export default function Header() {
             </Link>
             <nav>
                 <ul className="header-ul">
+                    <li className={`header-list ${location.pathname === "/" ? "active-page" : ""}`}>
+                        <Link to="/">Inicio</Link>
+                    </li>
                     <li className={`header-list ${location.pathname === "/quienes-somos" ? "active-page" : ""}`}>
                         <Link to="/quienes-somos">Quiénes Somos</Link>
                     </li>
