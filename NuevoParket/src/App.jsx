@@ -4,7 +4,7 @@ import Home from "./pages/Home";
 import QuienesSomos from "./pages/QuienesSomos";
 import Productos from "./pages/Productos";
 import Proyectos from "./pages/Proyectos";
-import Inspiracion from "./pages/Inspiracion";
+import Prestaciones from "./pages/Prestaciones";
 import Contacto from "./pages/Contacto";
 
 function App() {
@@ -14,7 +14,7 @@ function App() {
       <Route path="/quienes-somos" element={<QuienesSomos />} />
       <Route path="/productos" element={<Productos />} />
       <Route path="/proyectos" element={<Proyectos />} />
-      <Route path="/inspiracion" element={<Inspiracion />} />
+      <Route path="/prestaciones" element={<Prestaciones />} />
       <Route path="/contacto" element={<Contacto />} />
     </Routes>
   );

@@ -1,8 +1,8 @@
-import "./TextInspiracion.css";
+import "./MainPrestaciones.css";
 
-export default function TextInspiracion() {
+export default function MainPrestaciones() {
     return (
-        <section className="inspiracion-container">
+        <section className="MainPrestaciones-container">
             <h2>Inspirate con nuestros materiales</h2>
             <p>
                 Cada espacio cuenta una historia. En Nuevo Parket creemos que los materiales

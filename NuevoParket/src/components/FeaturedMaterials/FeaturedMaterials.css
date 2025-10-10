@@ -1,17 +1,110 @@
+/* --- SECCIÓN GENERAL --- */
 .featured {
     padding: 3rem;
     text-align: center;
 }
 
+.featured h2 {
+    font-family: var(--font-title);
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+/* --- GRID --- */
 .featured-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
-    margin-top: 2rem;
 }
 
+.material-card {
+    background-color: #fff;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 1.5rem;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.material-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+/* --- IMAGEN Y TEXTO --- */
 .material-img {
     width: 100%;
     height: 200px;
-    background: black;
+    background: #333;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.material-name {
+    font-family: var(--font-title);
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+/* --- BOTONES --- */
+.material-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.btn {
+    font-family: var(--font-title);
+    font-weight: 500;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    padding: 0.6rem 1.2rem;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+/* --- BOTÓN "SABER MÁS" --- */
+.btn-more {
+    background-color: var(--color3);
+    color: var(--color2);
+   
+}
+
+.btn-more:hover {
+    background-color: var(--color4);
+   
+}
+
+/* --- BOTÓN "AGREGAR AL CARRITO" --- */
+.btn-cart {
+    background-color: var(--color3);
+    color: var(--color2);
+}
+
+.btn-cart:hover {
+    background-color: var(--color4);
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 1024px) {
+    .featured-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .featured-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .material-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn {
+        width: 100%;
+        max-width: 220px;
+    }
 }

@@ -1,17 +1,15 @@
 import Header from "../components/Header/Header";
 import Hero from "../components/Hero/Hero";
-import TextInspiracion from "../components/TextInspiracion/TextInspiracion";
+import MainPrestaciones from "../components/MainPrestaciones/MainPrestaciones";
 import CallToAction from "../components/CallToAction/CallToAction";
 import Footer from "../components/Footer/Footer";
 
-export default function Inspiracion() {
+export default function Prestaciones() {
     return (
         <>
             <Header />
             <Hero />
-            <main>
-                <TextInspiracion />
-            </main>
+            <MainPrestaciones />
             <CallToAction />
             <Footer />
         </>

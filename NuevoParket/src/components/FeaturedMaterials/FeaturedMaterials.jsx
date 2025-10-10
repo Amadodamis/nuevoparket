@@ -10,9 +10,11 @@ export default function FeaturedMaterials() {
                 {materials.map((mat) => (
                     <div key={mat} className="material-card">
                         <div className="material-img"></div>
-                        <p>Material {mat}</p>
-                        <button>Más info</button>
-                        <button>Agregar al carrito</button>
+                        <p className="material-name">Material {mat}</p>
+                        <div className="material-buttons">
+                            <button className="btn btn-more">Saber más</button>
+                            <button className="btn btn-cart">Agregar al carrito</button>
+                        </div>
                     </div>
                 ))}
             </div>
