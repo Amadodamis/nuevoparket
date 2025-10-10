@@ -50,8 +50,8 @@ export default function Header() {
                     <li className={`header-list ${location.pathname === "/prestaciones" ? "active-page" : ""}`}>
                         <Link to="/prestaciones" onClick={closeMenu}>Prestaciones</Link>
                     </li>
-                    <li className={`header-list ${location.pathname === "/contacto" ? "active-page" : ""}`}>
-                        <Link to="/contacto" onClick={closeMenu}>Trabajá con nosotros</Link>
+                    <li className={`header-list ${location.pathname === "/trabajaconnosotros" ? "active-page" : ""}`}>
+                        <Link to="/trabajaconnosotros" onClick={closeMenu}>Trabajá con nosotros</Link>
                     </li>
                     <li className={`header-list ${location.pathname === "/contacto" ? "active-page" : ""}`}>
                         <Link to="/contacto" onClick={closeMenu}>Contacto</Link>

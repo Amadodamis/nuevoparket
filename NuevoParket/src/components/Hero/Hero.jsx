@@ -47,7 +47,7 @@ export default function Hero() {
             >
                 <div className="hero-content">
                     <h1>{slides[current].text}</h1>
-                    <button>Ver más</button>
+                    <button><p>Ver más</p></button>
                 </div>
 
                 <button className="arrow left" onClick={prevSlide}>

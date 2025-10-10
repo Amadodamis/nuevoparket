@@ -1,4 +1,3 @@
-
 .footer {
     box-sizing: border-box;
     padding: 3rem;
@@ -34,5 +33,74 @@
     }
     .footer-section:last-child {
         margin-bottom: 0;
+    }
+}
+
+/* ----------------------------------------------- */
+/* --- ESTILOS ADICIONALES PARA EL CARRUSEL DE MAPAS --- */
+/* ----------------------------------------------- */
+
+/* Contenedor principal del mapa. Es crucial para el posicionamiento de las flechas */
+.carousel-stack {
+    position: relative; 
+    width: 100%;
+    /* Ajuste para el espacio del título */
+    margin-top: 0.5rem;
+}
+
+/* El wrapper del mapa */
+.map-wrapper {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 0;
+}
+
+/* Estilo para las flechas: Posición ABSOLUTA para superponerlas al mapa */
+.carousel-button {
+    position: absolute; 
+    top: 50%;
+    transform: translateY(-50%); /* Centra verticalmente */
+    
+    /* Estilos visuales */
+    background: rgba(255, 255, 255, 0.8); /* Blanco semi-transparente */
+    color: var(--color2); 
+    border: none;
+    padding: 10px 8px; 
+    cursor: pointer;
+    font-size: 1.5rem; 
+    font-weight: bold;
+    border-radius: 50%; 
+    z-index: 10; 
+    transition: background-color 0.2s;
+}
+
+.carousel-button:hover {
+    background: rgba(255, 255, 255, 1);
+}
+
+.left-arrow {
+    left: 10px; 
+}
+
+.right-arrow {
+    right: 10px; 
+}
+
+/* Estilo de la dirección debajo del mapa */
+.map-address {
+    font-size: 0.8rem;
+    padding: 5px;
+    margin: 0;
+    color: var(--color2); 
+    background-color: var(--color3); 
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Ajuste para móviles */
+@media (max-width: 768px) {
+    .carousel-button {
+        padding: 8px 6px; 
+        font-size: 1.2rem;
     }
 }
