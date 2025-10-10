@@ -7,19 +7,19 @@
 
 }
 
-.logo {
+.logo-header{
     width: 15%;
 }
 
 
 
-.header nav ul {
+.header-ul{
     display: flex;
     gap: 2rem;
     list-style: none;
 }
 
-.header nav ul li {
+.header-list{
     cursor: pointer;
     font-weight: 500;
     font-family: var(--font-title);

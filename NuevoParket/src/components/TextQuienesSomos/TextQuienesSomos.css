@@ -1,0 +1,12 @@
+.text-quienes-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1rem 4rem 1rem;
+  color: #333;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.text-quienes-container strong {
+  color: var(--color1);
+}
