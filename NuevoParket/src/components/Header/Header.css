@@ -1,28 +1,48 @@
 .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 3rem;
     border-bottom: 1px solid #ccc;
-
+    background-color: #fff; /* fondo blanco fijo */
+    z-index: 1000; /* asegura que quede encima de todo */
+    transition: box-shadow 0.3s ease, background-color 0.3s ease;
 }
 
-.logo-header{
+/* Efecto de sombra cuando se hace scroll */
+.header.scrolled {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo-header {
     width: 15%;
 }
 
-
-
-.header-ul{
+.header-ul {
     display: flex;
     gap: 2rem;
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
-.header-list{
+.header-list {
     cursor: pointer;
     font-weight: 500;
     font-family: var(--font-title);
+}
+
+.header-list a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.active-page {
+    border-bottom: 2px solid #00b300;
 }
 
 .quote-btn {
@@ -34,4 +54,6 @@
     font-weight: 500;
     font-family: var(--font-title);
     font-size: 1.2rem;
+    border-radius: 4px;
 }
+

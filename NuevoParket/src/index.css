@@ -99,3 +99,8 @@ button{
   font-family: var(--font-text);
   font-weight: 500;
 }
+
+/* Evita que el contenido quede oculto debajo del header */
+body {
+    padding-top: 90px; /* ajustá según la altura real del header */
+}
