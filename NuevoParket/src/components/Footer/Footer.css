@@ -1,106 +1,134 @@
 .footer {
-    box-sizing: border-box;
-    padding: 3rem;
-    background: var(--color2);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 2rem;
-    width: 100%;
+  background-color: #fff;
+  color: #111;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 3rem;
+  gap: 2rem;
+  border-top: 1px solid #eee;
 }
 
-.footer-section {
-    background: var(--color3);
-    color: var(--color2);
-    padding: 1rem;
-    text-align: center;
-    /* Flexbox: Esto hace que todos los ítems crezcan igual y repartan el espacio */
-    flex-grow: 1;
+/* CONTACTO */
+.footer-contact {
+  flex: 1 1 320px;
 }
 
-
-@media (max-width: 768px) {
-    .footer {  
-        flex-direction: column;
-        align-items: center;
-        padding: 1.5rem;
-    }
-
-    .footer-section {
-        width: 100%;
-        flex-grow: 0;
-        margin-bottom: 1rem;
-    }
-    .footer-section:last-child {
-        margin-bottom: 0;
-    }
+.footer-contact h1 {
+  font-family: var(--font-title);
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
 }
 
-/* ----------------------------------------------- */
-/* --- ESTILOS ADICIONALES PARA EL CARRUSEL DE MAPAS --- */
-/* ----------------------------------------------- */
+.footer-branch {
+  margin-bottom: 1.25rem;
+}
 
-/* Contenedor principal del mapa. Es crucial para el posicionamiento de las flechas */
+.footer-branch h2 {
+  font-family: var(--font-title);
+  font-size: 1.05rem;
+  margin-bottom: 0.35rem;
+}
+
+.footer-branch p {
+  margin: 0.25rem 0;
+}
+
+.footer-branch a {
+  color: #111;
+  text-decoration: none;
+  font-family: var(--font-texts);
+}
+
+/* ICONOS (cada sucursal tiene los suyos) */
+.footer-icons {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+
+.footer-icons img {
+  width: 28px;
+  height: 28px;
+  display: inline-block;
+  transition: transform 0.18s ease;
+}
+
+.footer-icons img:hover {
+  transform: scale(1.15);
+}
+
+/* MAPA */
+.map-section {
+  flex: 1 1 420px;
+  text-align: center;
+}
+
+.map-section h1 {
+  font-family: var(--font-title);
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
 .carousel-stack {
-    position: relative; 
-    width: 100%;
-    /* Ajuste para el espacio del título */
-    margin-top: 0.5rem;
+  position: relative;
 }
 
-/* El wrapper del mapa */
 .map-wrapper {
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    border-radius: 4px;
-    overflow: hidden;
-    margin-bottom: 0;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+  margin-bottom: 0.75rem;
 }
 
-/* Estilo para las flechas: Posición ABSOLUTA para superponerlas al mapa */
+.map-wrapper p {
+  margin: 0;
+  padding: 0.6rem;
+  background: #fafafa;
+  font-family: var(--font-texts);
+  font-size: 0.9rem;
+  color: #333;
+}
+
+/* FLECHAS SOBRE EL MAPA: ahora con fondo claro para visibilidad */
 .carousel-button {
-    position: absolute; 
-    top: 50%;
-    transform: translateY(-50%); /* Centra verticalmente */
-    
-    /* Estilos visuales */
-    background: rgba(255, 255, 255, 0.8); /* Blanco semi-transparente */
-    color: var(--color2); 
-    border: none;
-    padding: 10px 8px; 
-    cursor: pointer;
-    font-size: 1.5rem; 
-    font-weight: bold;
-    border-radius: 50%; 
-    z-index: 10; 
-    transition: background-color 0.2s;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.92);
+  color: #111;
+  border: none;
+  font-size: 1.6rem;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+  transition: transform 0.18s ease, background-color 0.18s ease;
+  z-index: 30;
 }
 
 .carousel-button:hover {
-    background: rgba(255, 255, 255, 1);
+  transform: translateY(-50%) scale(1.05);
+  background-color: #fff;
 }
 
-.left-arrow {
-    left: 10px; 
+.left-arrow { left: 10px; }
+.right-arrow { right: 10px; }
+
+/* responsive */
+@media (max-width: 900px) {
+  .footer { padding: 2rem; }
+  .map-section { flex-basis: 100%; order: 3; }
+  .footer-contact { flex-basis: 100%; order: 1; text-align: center; }
+  .footer-icons { justify-content: center; }
 }
 
-.right-arrow {
-    right: 10px; 
-}
-
-/* Estilo de la dirección debajo del mapa */
-.map-address {
-    font-size: 0.8rem;
-    padding: 5px;
-    margin: 0;
-    color: var(--color2); 
-    background-color: var(--color3); 
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-/* Ajuste para móviles */
-@media (max-width: 768px) {
-    .carousel-button {
-        padding: 8px 6px; 
-        font-size: 1.2rem;
-    }
+@media (max-width: 480px) {
+  .carousel-button { width: 34px; height: 34px; font-size: 1.25rem; }
+  .map-section iframe { height: 160px; }
 }
