@@ -63,7 +63,7 @@ export default function Footer() {
       name: "Quilmes",
       address: "Av. 12 de Octubre 499, Quilmes",
       iframeSrc:
-        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3271.74311032542!2d-57.95460292329868!3d-34.92131237283738!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2e633d9370b39%3A0x6b42b6623c21a115!2sCalle%2042%20557%2C%20La%20Plata!5e0!3m2!1ses-419!2sar!4v1700000000000!5m2!1ses-419!2sar",
+        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.8916158690184!2d-58.2670658233166!3d-34.70960457292351!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a32eab1f4a6ee7%3A0x2b7a76dbfc9fae48!2sAv.%2012%20de%20Octubre%20499%2C%20B1878KFI%20Quilmes%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1739555555555!5m2!1ses-419!2sar",
     },
   ];
 
@@ -83,11 +83,7 @@ export default function Footer() {
 
         <div className="footer-branch">
           <h2>La Plata / Gonnet</h2>
-          <p>
-            <a href={vendedorLPselected} target="_blank" rel="noopener noreferrer">
-              WhatsApp: La Plata / Gonnet
-            </a>
-          </p>
+
           <div className="footer-icons">
             <a
               href="https://www.facebook.com/profile.php?id=61571210476450"
@@ -113,11 +109,7 @@ export default function Footer() {
 
         <div className="footer-branch">
           <h2>Quilmes</h2>
-          <p>
-            <a href={vendedorQuilmes} target="_blank" rel="noopener noreferrer">
-              WhatsApp: Quilmes
-            </a>
-          </p>
+
           <div className="footer-icons">
             <a
               href="https://www.instagram.com/nuevoparket.sucursalquilmes/"
